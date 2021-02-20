@@ -31,7 +31,7 @@ namespace Gmaps
 
         private void button1_Click(object sender, EventArgs e)
         {
- 
+
             OpenFileDialog buscarArchivos = new OpenFileDialog();
             if (buscarArchivos.ShowDialog() == DialogResult.OK)
             {
@@ -45,7 +45,7 @@ namespace Gmaps
 
             int iRow = 2;
             List<Principal> lst = new List<Principal>();
-            while (!string.IsNullOrEmpty(sl.GetCellValueAsString(iRow, 1)) && iRow <100)
+            while (!string.IsNullOrEmpty(sl.GetCellValueAsString(iRow, 1)) && iRow < 30)
             {
                 Principal dataSet = new Principal();
                 dataSet.CASO = sl.GetCellValueAsInt32(iRow, 1);
@@ -62,7 +62,7 @@ namespace Gmaps
 
                 lst.Add(dataSet);
 
-                iRow++; 
+                iRow++;
             }
 
             dataGridView1.DataSource = lst;
@@ -70,46 +70,138 @@ namespace Gmaps
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-                if (comboBox1.SelectedIndex == 0)
-                {
-                    dataGridView1.Columns["codDepar"].Visible = true;
-                    dataGridView1.Columns["codMun"].Visible = false;
-                    dataGridView1.Columns["departament"].Visible = false;
-                    dataGridView1.Columns["municipaly"].Visible = false;
-                    dataGridView1.Columns["type"].Visible = false;
-                }
-                if (comboBox1.SelectedIndex == 1)
-                {
-                    dataGridView1.Columns["codDepar"].Visible = false;
-                    dataGridView1.Columns["codMun"].Visible = true;
-                    dataGridView1.Columns["departament"].Visible = false;
-                    dataGridView1.Columns["municipaly"].Visible = false;
-                    dataGridView1.Columns["type"].Visible = false;
-                }
-                if (comboBox1.SelectedIndex == 2)
-                {
-                    dataGridView1.Columns["codDepar"].Visible = false;
-                    dataGridView1.Columns["codMun"].Visible = false;
-                    dataGridView1.Columns["departament"].Visible = true;
-                    dataGridView1.Columns["municipaly"].Visible = false;
-                    dataGridView1.Columns["type"].Visible = false;
-                }
-                if (comboBox1.SelectedIndex == 3)
-                {
-                    dataGridView1.Columns["codDepar"].Visible = false;
-                    dataGridView1.Columns["codMun"].Visible = false;
-                    dataGridView1.Columns["departament"].Visible = false;
-                    dataGridView1.Columns["municipaly"].Visible = true;
-                    dataGridView1.Columns["type"].Visible = false;
-                }
-                if (comboBox1.SelectedIndex == 4)
-                {
-                    dataGridView1.Columns["codDepar"].Visible = false;
-                    dataGridView1.Columns["codMun"].Visible = false;
-                    dataGridView1.Columns["departament"].Visible = false;
-                    dataGridView1.Columns["municipaly"].Visible = false;
-                    dataGridView1.Columns["type"].Visible = true;
-                }
+
+            if (comboBox1.SelectedIndex == 0)
+            {
+                dataGridView1.Columns["CASO"].Visible = true;
+                dataGridView1.Columns["CIUDAD"].Visible = false;
+                dataGridView1.Columns["EDAD"].Visible = false;
+                dataGridView1.Columns["ESTADO"].Visible = false;
+                dataGridView1.Columns["FECHA_DIAGNOSTICO"].Visible = false;
+                dataGridView1.Columns["FUENTE"].Visible = false;
+                dataGridView1.Columns["INICIO_DE_SINTOMAS"].Visible = false;
+                dataGridView1.Columns["LOCALIDAD"].Visible = false;
+                dataGridView1.Columns["SEXO"].Visible = false;
+                dataGridView1.Columns["UBICACION"].Visible = false;
+            }
+            if (comboBox1.SelectedIndex == 1)
+            {
+                dataGridView1.Columns["CASO"].Visible = false;
+                dataGridView1.Columns["CIUDAD"].Visible = true;
+                dataGridView1.Columns["EDAD"].Visible = false;
+                dataGridView1.Columns["ESTADO"].Visible = false;
+                dataGridView1.Columns["FECHA_DIAGNOSTICO"].Visible = false;
+                dataGridView1.Columns["FUENTE"].Visible = false;
+                dataGridView1.Columns["INICIO_DE_SINTOMAS"].Visible = false;
+                dataGridView1.Columns["LOCALIDAD"].Visible = false;
+                dataGridView1.Columns["SEXO"].Visible = false;
+                dataGridView1.Columns["UBICACION"].Visible = false;
+            }
+            if (comboBox1.SelectedIndex == 2)
+            {
+                dataGridView1.Columns["CASO"].Visible = false;
+                dataGridView1.Columns["CIUDAD"].Visible = false;
+                dataGridView1.Columns["EDAD"].Visible = true;
+                dataGridView1.Columns["ESTADO"].Visible = false;
+                dataGridView1.Columns["FECHA_DIAGNOSTICO"].Visible = false;
+                dataGridView1.Columns["FUENTE"].Visible = false;
+                dataGridView1.Columns["INICIO_DE_SINTOMAS"].Visible = false;
+                dataGridView1.Columns["LOCALIDAD"].Visible = false;
+                dataGridView1.Columns["SEXO"].Visible = false;
+                dataGridView1.Columns["UBICACION"].Visible = false;
+            }
+            if (comboBox1.SelectedIndex == 3)
+            {
+                dataGridView1.Columns["CASO"].Visible = false;
+                dataGridView1.Columns["CIUDAD"].Visible = false;
+                dataGridView1.Columns["EDAD"].Visible = false;
+                dataGridView1.Columns["ESTADO"].Visible = true;
+                dataGridView1.Columns["FECHA_DIAGNOSTICO"].Visible = false;
+                dataGridView1.Columns["FUENTE"].Visible = false;
+                dataGridView1.Columns["INICIO_DE_SINTOMAS"].Visible = false;
+                dataGridView1.Columns["LOCALIDAD"].Visible = false;
+                dataGridView1.Columns["SEXO"].Visible = false;
+                dataGridView1.Columns["UBICACION"].Visible = false;
+            }
+            if (comboBox1.SelectedIndex == 4)
+            {
+                dataGridView1.Columns["CASO"].Visible = false;
+                dataGridView1.Columns["CIUDAD"].Visible = false;
+                dataGridView1.Columns["EDAD"].Visible = false;
+                dataGridView1.Columns["ESTADO"].Visible = false;
+                dataGridView1.Columns["FECHA_DIAGNOSTICO"].Visible = true;
+                dataGridView1.Columns["FUENTE"].Visible = false;
+                dataGridView1.Columns["INICIO_DE_SINTOMAS"].Visible = false;
+                dataGridView1.Columns["LOCALIDAD"].Visible = false;
+                dataGridView1.Columns["SEXO"].Visible = false;
+                dataGridView1.Columns["UBICACION"].Visible = false;
+            }
+            if (comboBox1.SelectedIndex == 5)
+            {
+                dataGridView1.Columns["CASO"].Visible = false;
+                dataGridView1.Columns["CIUDAD"].Visible = false;
+                dataGridView1.Columns["EDAD"].Visible = false;
+                dataGridView1.Columns["ESTADO"].Visible = false;
+                dataGridView1.Columns["FECHA_DIAGNOSTICO"].Visible = false;
+                dataGridView1.Columns["FUENTE"].Visible = true;
+                dataGridView1.Columns["INICIO_DE_SINTOMAS"].Visible = false;
+                dataGridView1.Columns["LOCALIDAD"].Visible = false;
+                dataGridView1.Columns["SEXO"].Visible = false;
+                dataGridView1.Columns["UBICACION"].Visible = false;
+            }
+            if (comboBox1.SelectedIndex == 6)
+            {
+                dataGridView1.Columns["CASO"].Visible = false;
+                dataGridView1.Columns["CIUDAD"].Visible = false;
+                dataGridView1.Columns["EDAD"].Visible = false;
+                dataGridView1.Columns["ESTADO"].Visible = false;
+                dataGridView1.Columns["FECHA_DIAGNOSTICO"].Visible = false;
+                dataGridView1.Columns["FUENTE"].Visible = false;
+                dataGridView1.Columns["INICIO_DE_SINTOMAS"].Visible = true;
+                dataGridView1.Columns["LOCALIDAD"].Visible = false;
+                dataGridView1.Columns["SEXO"].Visible = false;
+                dataGridView1.Columns["UBICACION"].Visible = false;
+            }
+            if (comboBox1.SelectedIndex == 7)
+            {
+                dataGridView1.Columns["CASO"].Visible = false;
+                dataGridView1.Columns["CIUDAD"].Visible = false;
+                dataGridView1.Columns["EDAD"].Visible = false;
+                dataGridView1.Columns["ESTADO"].Visible = false;
+                dataGridView1.Columns["FECHA_DIAGNOSTICO"].Visible = false;
+                dataGridView1.Columns["FUENTE"].Visible = false;
+                dataGridView1.Columns["INICIO_DE_SINTOMAS"].Visible = false;
+                dataGridView1.Columns["LOCALIDAD"].Visible = true;
+                dataGridView1.Columns["SEXO"].Visible = false;
+                dataGridView1.Columns["UBICACION"].Visible = false;
+            }
+            if (comboBox1.SelectedIndex == 8)
+            {
+                dataGridView1.Columns["CASO"].Visible = false;
+                dataGridView1.Columns["CIUDAD"].Visible = false;
+                dataGridView1.Columns["EDAD"].Visible = false;
+                dataGridView1.Columns["ESTADO"].Visible = false;
+                dataGridView1.Columns["FECHA_DIAGNOSTICO"].Visible = false;
+                dataGridView1.Columns["FUENTE"].Visible = false;
+                dataGridView1.Columns["INICIO_DE_SINTOMAS"].Visible = false;
+                dataGridView1.Columns["LOCALIDAD"].Visible = false;
+                dataGridView1.Columns["SEXO"].Visible = true;
+                dataGridView1.Columns["UBICACION"].Visible = false;
+            }
+            if (comboBox1.SelectedIndex == 9)
+            {
+                dataGridView1.Columns["CASO"].Visible = false;
+                dataGridView1.Columns["CIUDAD"].Visible = false;
+                dataGridView1.Columns["EDAD"].Visible = false;
+                dataGridView1.Columns["ESTADO"].Visible = false;
+                dataGridView1.Columns["FECHA_DIAGNOSTICO"].Visible = false;
+                dataGridView1.Columns["FUENTE"].Visible = false;
+                dataGridView1.Columns["INICIO_DE_SINTOMAS"].Visible = false;
+                dataGridView1.Columns["LOCALIDAD"].Visible = false;
+                dataGridView1.Columns["SEXO"].Visible = false;
+                dataGridView1.Columns["UBICACION"].Visible = true;
+            }
         }
+
     }
 }

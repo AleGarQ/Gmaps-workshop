@@ -49,6 +49,17 @@ namespace Gmaps
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "CASO",
+            "FECHA INICIO",
+            "FECHA DIAGNOSTICO",
+            "CIUDAD",
+            "LOCALIDAD",
+            "EDAD",
+            "SEXO",
+            "FUENTE",
+            "UBICACION",
+            "ESTADO"});
             this.comboBox1.Location = new System.Drawing.Point(900, 72);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(219, 24);

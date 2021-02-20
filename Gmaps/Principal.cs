@@ -8,6 +8,10 @@ namespace Gmaps
 {
     class Principal
     {
+        public Principal()
+        {
+        }
+
         public int CASO { get; set; }
         public string INICIO_DE_SINTOMAS { get; set; }
         public string FECHA_DIAGNOSTICO { get; set; }
@@ -18,6 +22,7 @@ namespace Gmaps
         public string FUENTE { get; set; }
         public string UBICACION { get; set; }
         public string ESTADO { get; set; }
-
     }
+
+    
 }
