@@ -33,6 +33,10 @@ namespace Gmaps
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.numerico1 = new System.Windows.Forms.TextBox();
+            this.numerico2 = new System.Windows.Forms.TextBox();
+            this.categoriaCombo = new System.Windows.Forms.ComboBox();
+            this.texto = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,18 +52,19 @@ namespace Gmaps
             // 
             // comboBox1
             // 
+            this.comboBox1.Enabled = false;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "CASO",
-            "FECHA INICIO",
-            "FECHA DIAGNOSTICO",
             "CIUDAD",
-            "LOCALIDAD",
             "EDAD",
-            "SEXO",
+            "ESTADO",
+            "FECHA DE DIAGNOSTICO",
             "FUENTE",
-            "UBICACION",
-            "ESTADO"});
+            "INICIO SINTOMAS",
+            "LOCALIDAD",
+            "SEXO",
+            "UBICACION"});
             this.comboBox1.Location = new System.Drawing.Point(900, 72);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(219, 24);
@@ -85,11 +90,48 @@ namespace Gmaps
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // numerico1
+            // 
+            this.numerico1.Enabled = false;
+            this.numerico1.Location = new System.Drawing.Point(905, 329);
+            this.numerico1.Name = "numerico1";
+            this.numerico1.Size = new System.Drawing.Size(108, 22);
+            this.numerico1.TabIndex = 4;
+            // 
+            // numerico2
+            // 
+            this.numerico2.Enabled = false;
+            this.numerico2.Location = new System.Drawing.Point(1019, 329);
+            this.numerico2.Name = "numerico2";
+            this.numerico2.Size = new System.Drawing.Size(100, 22);
+            this.numerico2.TabIndex = 5;
+            // 
+            // categoriaCombo
+            // 
+            this.categoriaCombo.Enabled = false;
+            this.categoriaCombo.FormattingEnabled = true;
+            this.categoriaCombo.Location = new System.Drawing.Point(905, 261);
+            this.categoriaCombo.Name = "categoriaCombo";
+            this.categoriaCombo.Size = new System.Drawing.Size(214, 24);
+            this.categoriaCombo.TabIndex = 6;
+            // 
+            // texto
+            // 
+            this.texto.Enabled = false;
+            this.texto.Location = new System.Drawing.Point(905, 418);
+            this.texto.Name = "texto";
+            this.texto.Size = new System.Drawing.Size(214, 22);
+            this.texto.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1131, 554);
+            this.Controls.Add(this.texto);
+            this.Controls.Add(this.categoriaCombo);
+            this.Controls.Add(this.numerico2);
+            this.Controls.Add(this.numerico1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
@@ -110,6 +152,10 @@ namespace Gmaps
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox numerico1;
+        private System.Windows.Forms.TextBox numerico2;
+        private System.Windows.Forms.ComboBox categoriaCombo;
+        private System.Windows.Forms.TextBox texto;
     }
 }
 

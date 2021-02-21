@@ -49,29 +49,28 @@ namespace Gmaps
             {
                 Principal dataSet = new Principal();
                 dataSet.CASO = sl.GetCellValueAsInt32(iRow, 1);
-                dataSet.CIUDAD = sl.GetCellValueAsString(iRow, 2);
-                dataSet.EDAD = sl.GetCellValueAsInt32(iRow, 3);
-                dataSet.ESTADO = sl.GetCellValueAsString(iRow, 4);
-                dataSet.FECHA_DIAGNOSTICO = sl.GetCellValueAsString(iRow, 5);
-                dataSet.FUENTE = sl.GetCellValueAsString(iRow, 6);
-                dataSet.INICIO_DE_SINTOMAS = sl.GetCellValueAsString(iRow, 7);
-                dataSet.LOCALIDAD = sl.GetCellValueAsString(iRow, 8);
-                dataSet.SEXO = sl.GetCellValueAsInt32(iRow, 9);
-                dataSet.UBICACION = sl.GetCellValueAsString(iRow, 10);
-
+                dataSet.INICIO_DE_SINTOMAS = sl.GetCellValueAsDateTime(iRow, 2);
+                dataSet.FECHA_DIAGNOSTICO = sl.GetCellValueAsDateTime(iRow, 3);
+                dataSet.CIUDAD = sl.GetCellValueAsString(iRow, 4);
+                dataSet.LOCALIDAD = sl.GetCellValueAsString(iRow, 5);
+                dataSet.EDAD = sl.GetCellValueAsInt32(iRow, 6);
+                dataSet.SEXO = sl.GetCellValueAsString(iRow, 7);
+                dataSet.FUENTE = sl.GetCellValueAsString(iRow, 8);
+                dataSet.UBICACION = sl.GetCellValueAsString(iRow, 9);
+                dataSet.ESTADO = sl.GetCellValueAsString(iRow, 10);
 
                 lst.Add(dataSet);
 
                 iRow++;
             }
-
+            comboBox1.Enabled = true;
             dataGridView1.DataSource = lst;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            if (comboBox1.SelectedIndex == 0)
+            if (comboBox1.SelectedIndex == 0) //numerico
             {
                 dataGridView1.Columns["CASO"].Visible = true;
                 dataGridView1.Columns["CIUDAD"].Visible = false;
@@ -83,8 +82,9 @@ namespace Gmaps
                 dataGridView1.Columns["LOCALIDAD"].Visible = false;
                 dataGridView1.Columns["SEXO"].Visible = false;
                 dataGridView1.Columns["UBICACION"].Visible = false;
+                numerico();
             }
-            if (comboBox1.SelectedIndex == 1)
+            if (comboBox1.SelectedIndex == 1) //categorico
             {
                 dataGridView1.Columns["CASO"].Visible = false;
                 dataGridView1.Columns["CIUDAD"].Visible = true;
@@ -96,8 +96,9 @@ namespace Gmaps
                 dataGridView1.Columns["LOCALIDAD"].Visible = false;
                 dataGridView1.Columns["SEXO"].Visible = false;
                 dataGridView1.Columns["UBICACION"].Visible = false;
+                categorico();
             }
-            if (comboBox1.SelectedIndex == 2)
+            if (comboBox1.SelectedIndex == 2) //numerico
             {
                 dataGridView1.Columns["CASO"].Visible = false;
                 dataGridView1.Columns["CIUDAD"].Visible = false;
@@ -109,8 +110,9 @@ namespace Gmaps
                 dataGridView1.Columns["LOCALIDAD"].Visible = false;
                 dataGridView1.Columns["SEXO"].Visible = false;
                 dataGridView1.Columns["UBICACION"].Visible = false;
+                numerico();
             }
-            if (comboBox1.SelectedIndex == 3)
+            if (comboBox1.SelectedIndex == 3) //categorico
             {
                 dataGridView1.Columns["CASO"].Visible = false;
                 dataGridView1.Columns["CIUDAD"].Visible = false;
@@ -122,8 +124,9 @@ namespace Gmaps
                 dataGridView1.Columns["LOCALIDAD"].Visible = false;
                 dataGridView1.Columns["SEXO"].Visible = false;
                 dataGridView1.Columns["UBICACION"].Visible = false;
+                categorico();
             }
-            if (comboBox1.SelectedIndex == 4)
+            if (comboBox1.SelectedIndex == 4) 
             {
                 dataGridView1.Columns["CASO"].Visible = false;
                 dataGridView1.Columns["CIUDAD"].Visible = false;
@@ -136,7 +139,7 @@ namespace Gmaps
                 dataGridView1.Columns["SEXO"].Visible = false;
                 dataGridView1.Columns["UBICACION"].Visible = false;
             }
-            if (comboBox1.SelectedIndex == 5)
+            if (comboBox1.SelectedIndex == 5) //cadena
             {
                 dataGridView1.Columns["CASO"].Visible = false;
                 dataGridView1.Columns["CIUDAD"].Visible = false;
@@ -148,6 +151,7 @@ namespace Gmaps
                 dataGridView1.Columns["LOCALIDAD"].Visible = false;
                 dataGridView1.Columns["SEXO"].Visible = false;
                 dataGridView1.Columns["UBICACION"].Visible = false;
+                cadena();
             }
             if (comboBox1.SelectedIndex == 6)
             {
@@ -162,7 +166,7 @@ namespace Gmaps
                 dataGridView1.Columns["SEXO"].Visible = false;
                 dataGridView1.Columns["UBICACION"].Visible = false;
             }
-            if (comboBox1.SelectedIndex == 7)
+            if (comboBox1.SelectedIndex == 7) //cadena
             {
                 dataGridView1.Columns["CASO"].Visible = false;
                 dataGridView1.Columns["CIUDAD"].Visible = false;
@@ -174,8 +178,9 @@ namespace Gmaps
                 dataGridView1.Columns["LOCALIDAD"].Visible = true;
                 dataGridView1.Columns["SEXO"].Visible = false;
                 dataGridView1.Columns["UBICACION"].Visible = false;
+                cadena();
             }
-            if (comboBox1.SelectedIndex == 8)
+            if (comboBox1.SelectedIndex == 8) //categorico
             {
                 dataGridView1.Columns["CASO"].Visible = false;
                 dataGridView1.Columns["CIUDAD"].Visible = false;
@@ -187,8 +192,9 @@ namespace Gmaps
                 dataGridView1.Columns["LOCALIDAD"].Visible = false;
                 dataGridView1.Columns["SEXO"].Visible = true;
                 dataGridView1.Columns["UBICACION"].Visible = false;
+                categorico();
             }
-            if (comboBox1.SelectedIndex == 9)
+            if (comboBox1.SelectedIndex == 9) //cadena
             {
                 dataGridView1.Columns["CASO"].Visible = false;
                 dataGridView1.Columns["CIUDAD"].Visible = false;
@@ -200,6 +206,65 @@ namespace Gmaps
                 dataGridView1.Columns["LOCALIDAD"].Visible = false;
                 dataGridView1.Columns["SEXO"].Visible = false;
                 dataGridView1.Columns["UBICACION"].Visible = true;
+                cadena();
+            }
+        }
+
+        public void numerico()
+        {
+            numerico1.Enabled = true;
+            numerico2.Enabled = true;
+            if(categoriaCombo.Enabled == true )
+            {
+                categoriaCombo.Enabled = false;
+            }if(texto.Enabled == true)
+            {
+                texto.Enabled = false;
+            }
+            
+        }
+        public void categorico()
+        {
+            categoriaCombo.Enabled = true;
+            if(numerico1.Enabled == true && numerico2.Enabled == true)
+            {
+                numerico1.Enabled = false;
+                numerico2.Enabled = false;
+            }if(texto.Enabled == true)
+            {
+                texto.Enabled = false;
+            }
+            if(comboBox1.SelectedItem.ToString() == "CIUDAD") 
+            {
+                categoriaCombo.Items.Add("Bogotá");
+                categoriaCombo.Items.Add("Fuera de Bogotá");
+                categoriaCombo.Items.Add("Sin dato");
+                if (categoriaCombo.Text == "Bogotá")
+                {
+                }
+            }
+            if (comboBox1.SelectedItem.ToString() == "SEXO")
+            {
+                categoriaCombo.Items.Add("Femenino");
+                categoriaCombo.Items.Add("Masculino");
+ 
+                if (categoriaCombo.Text == "Bogotá")
+                {
+
+                }
+            }
+
+        }
+        public void cadena()
+        {
+            texto.Enabled = true;
+            if (numerico1.Enabled == true && numerico2.Enabled == true)
+            {
+                numerico1.Enabled = false;
+                numerico2.Enabled = false;
+            }if(categoriaCombo.Enabled == true)
+            {
+                categoriaCombo.Enabled = false;
             }
         }
 
