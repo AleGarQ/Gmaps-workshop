@@ -10,28 +10,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Gmaps.ui;
 
-namespace Gmaps
+namespace Gmaps.ui
 {
-    public partial class Form1 : Form
+    public partial class GridForm : Form
     {
-        private string path = @"C:\Users\Windows 10\Desktop\Gmaps-workshop\Gmaps\data\COVID.xlsx";
+        //private string path = @"C:\Users\Windows 10\Desktop\Gmaps-workshop\Gmaps\data\COVID.xlsx";
+        private string path = @"C:\Users\alejo\source\repos\Gmaps\Gmaps\data\COVID.xlsx";
 
         private List<PointLatLng> points; //marcadores
         private GMapOverlay MarkerOverlay;
-        public Form1()
+        public GridForm()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-
             OpenFileDialog buscarArchivos = new OpenFileDialog();
             if (buscarArchivos.ShowDialog() == DialogResult.OK)
             {
@@ -126,7 +122,7 @@ namespace Gmaps
                 dataGridView1.Columns["UBICACION"].Visible = false;
                 categorico();
             }
-            if (comboBox1.SelectedIndex == 4) 
+            if (comboBox1.SelectedIndex == 4)
             {
                 dataGridView1.Columns["CASO"].Visible = false;
                 dataGridView1.Columns["CIUDAD"].Visible = false;
@@ -214,27 +210,29 @@ namespace Gmaps
         {
             numerico1.Enabled = true;
             numerico2.Enabled = true;
-            if(categoriaCombo.Enabled == true )
+            if (categoriaCombo.Enabled == true)
             {
                 categoriaCombo.Enabled = false;
-            }if(texto.Enabled == true)
+            }
+            if (texto.Enabled == true)
             {
                 texto.Enabled = false;
             }
-            
+
         }
         public void categorico()
         {
             categoriaCombo.Enabled = true;
-            if(numerico1.Enabled == true && numerico2.Enabled == true)
+            if (numerico1.Enabled == true && numerico2.Enabled == true)
             {
                 numerico1.Enabled = false;
                 numerico2.Enabled = false;
-            }if(texto.Enabled == true)
+            }
+            if (texto.Enabled == true)
             {
                 texto.Enabled = false;
             }
-            if(comboBox1.SelectedItem.ToString() == "CIUDAD") 
+            if (comboBox1.SelectedItem.ToString() == "CIUDAD")
             {
                 categoriaCombo.Items.Add("Bogotá");
                 categoriaCombo.Items.Add("Fuera de Bogotá");
@@ -247,7 +245,7 @@ namespace Gmaps
             {
                 categoriaCombo.Items.Add("Femenino");
                 categoriaCombo.Items.Add("Masculino");
- 
+
                 if (categoriaCombo.Text == "Bogotá")
                 {
 
@@ -262,11 +260,11 @@ namespace Gmaps
             {
                 numerico1.Enabled = false;
                 numerico2.Enabled = false;
-            }if(categoriaCombo.Enabled == true)
+            }
+            if (categoriaCombo.Enabled == true)
             {
                 categoriaCombo.Enabled = false;
             }
         }
-
     }
 }
