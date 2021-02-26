@@ -102,11 +102,5 @@ namespace Gmaps.ui
             
 
         }
-
-        private void cargarDatos(object sender, EventArgs e)
-        {
-           
-            
-        }
     }
 }

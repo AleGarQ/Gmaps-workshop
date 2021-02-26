@@ -22,7 +22,7 @@ namespace Gmaps.ui
         private List<PointLatLng> dots;
 
         GMapOverlay markers = new GMapOverlay("markers");
-        
+
         public MapForm()
         {
             InitializeComponent();
@@ -52,7 +52,7 @@ namespace Gmaps.ui
 
         private void btnRecovered_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnShowAll_Click(object sender, EventArgs e)

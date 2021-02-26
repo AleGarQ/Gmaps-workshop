@@ -16,11 +16,6 @@ namespace Gmaps
 {
     public partial class Form1 : Form
     {
-        //private string path = @"C:\Users\Windows 10\Desktop\Gmaps-workshop\Gmaps\data\COVID.xlsx";
-        private string path = @"C:\Users\alejo\source\repos\Gmaps\Gmaps\data\COVID.xlsx";
-
-        private List<PointLatLng> points; //marcadores
-        private GMapOverlay MarkerOverlay;
         public Form1()
         {
             InitializeComponent();

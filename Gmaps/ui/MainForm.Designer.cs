@@ -59,7 +59,7 @@ namespace Gmaps
             // 
             this.container.Location = new System.Drawing.Point(2, 51);
             this.container.Name = "container";
-            this.container.Size = new System.Drawing.Size(885, 439);
+            this.container.Size = new System.Drawing.Size(970, 533);
             this.container.TabIndex = 10;
             // 
             // button2
@@ -76,7 +76,7 @@ namespace Gmaps
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(895, 502);
+            this.ClientSize = new System.Drawing.Size(972, 584);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.container);
             this.Controls.Add(this.btnGraph);

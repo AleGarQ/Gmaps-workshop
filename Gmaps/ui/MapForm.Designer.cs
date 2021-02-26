@@ -45,7 +45,6 @@ namespace Gmaps.ui
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-<<<<<<< HEAD
             // map
             // 
             this.map.Bearing = 0F;
@@ -54,7 +53,8 @@ namespace Gmaps.ui
             this.map.GrayScaleMode = false;
             this.map.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.map.LevelsKeepInMemmory = 5;
-            this.map.Location = new System.Drawing.Point(201, 12);
+            this.map.Location = new System.Drawing.Point(221, 11);
+            this.map.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.map.MarkersEnabled = true;
             this.map.MaxZoom = 20;
             this.map.MinZoom = 2;
@@ -68,16 +68,17 @@ namespace Gmaps.ui
             this.map.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.map.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.map.ShowTileGridLines = false;
-            this.map.Size = new System.Drawing.Size(587, 364);
+            this.map.Size = new System.Drawing.Size(621, 434);
             this.map.TabIndex = 0;
             this.map.Zoom = 13D;
             this.map.Load += new System.EventHandler(this.gMapControl1_Load);
             // 
             // btnCases
             // 
-            this.btnCases.Location = new System.Drawing.Point(32, 160);
+            this.btnCases.Location = new System.Drawing.Point(56, 130);
+            this.btnCases.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCases.Name = "btnCases";
-            this.btnCases.Size = new System.Drawing.Size(136, 23);
+            this.btnCases.Size = new System.Drawing.Size(135, 19);
             this.btnCases.TabIndex = 1;
             this.btnCases.Text = "Cantidad de contagios";
             this.btnCases.UseVisualStyleBackColor = true;
@@ -86,7 +87,8 @@ namespace Gmaps.ui
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 126);
+            this.label1.Location = new System.Drawing.Point(50, 102);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(123, 13);
             this.label1.TabIndex = 2;
@@ -94,10 +96,11 @@ namespace Gmaps.ui
             // 
             // btnRecovered
             // 
-            this.btnRecovered.Location = new System.Drawing.Point(32, 200);
+            this.btnRecovered.Location = new System.Drawing.Point(56, 162);
+            this.btnRecovered.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRecovered.Name = "btnRecovered";
             this.btnRecovered.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnRecovered.Size = new System.Drawing.Size(136, 23);
+            this.btnRecovered.Size = new System.Drawing.Size(135, 19);
             this.btnRecovered.TabIndex = 3;
             this.btnRecovered.Text = "Cantidad recuperados";
             this.btnRecovered.UseVisualStyleBackColor = true;
@@ -105,18 +108,20 @@ namespace Gmaps.ui
             // 
             // btnDeceased
             // 
-            this.btnDeceased.Location = new System.Drawing.Point(32, 243);
+            this.btnDeceased.Location = new System.Drawing.Point(56, 197);
+            this.btnDeceased.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDeceased.Name = "btnDeceased";
-            this.btnDeceased.Size = new System.Drawing.Size(136, 23);
+            this.btnDeceased.Size = new System.Drawing.Size(135, 19);
             this.btnDeceased.TabIndex = 4;
             this.btnDeceased.Text = "Cantidad fallecidos";
             this.btnDeceased.UseVisualStyleBackColor = true;
             // 
             // btnShowAll
             // 
-            this.btnShowAll.Location = new System.Drawing.Point(32, 48);
+            this.btnShowAll.Location = new System.Drawing.Point(56, 39);
+            this.btnShowAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnShowAll.Name = "btnShowAll";
-            this.btnShowAll.Size = new System.Drawing.Size(136, 23);
+            this.btnShowAll.Size = new System.Drawing.Size(135, 19);
             this.btnShowAll.TabIndex = 5;
             this.btnShowAll.Text = "Mostrar las localidades";
             this.btnShowAll.UseVisualStyleBackColor = true;
@@ -124,9 +129,10 @@ namespace Gmaps.ui
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(32, 353);
+            this.btnClear.Location = new System.Drawing.Point(56, 287);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(136, 23);
+            this.btnClear.Size = new System.Drawing.Size(135, 19);
             this.btnClear.TabIndex = 6;
             this.btnClear.Text = "Limpiar mapa";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -135,7 +141,8 @@ namespace Gmaps.ui
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(384, 393);
+            this.label2.Location = new System.Drawing.Point(430, 460);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 13);
             this.label2.TabIndex = 7;
@@ -145,15 +152,17 @@ namespace Gmaps.ui
             // 
             this.textBox1.BackColor = System.Drawing.Color.Red;
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(387, 411);
+            this.textBox1.Location = new System.Drawing.Point(430, 478);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(22, 20);
+            this.textBox1.Size = new System.Drawing.Size(18, 20);
             this.textBox1.TabIndex = 8;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(416, 417);
+            this.label3.Location = new System.Drawing.Point(452, 483);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 9;
@@ -162,7 +171,8 @@ namespace Gmaps.ui
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(497, 417);
+            this.label4.Location = new System.Drawing.Point(529, 482);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 13);
             this.label4.TabIndex = 11;
@@ -172,15 +182,17 @@ namespace Gmaps.ui
             // 
             this.textBox2.BackColor = System.Drawing.Color.Yellow;
             this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(468, 411);
+            this.textBox2.Location = new System.Drawing.Point(507, 478);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(22, 20);
+            this.textBox2.Size = new System.Drawing.Size(18, 20);
             this.textBox2.TabIndex = 10;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(577, 417);
+            this.label5.Location = new System.Drawing.Point(601, 483);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(34, 13);
             this.label5.TabIndex = 13;
@@ -190,46 +202,17 @@ namespace Gmaps.ui
             // 
             this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(549, 410);
+            this.textBox3.Location = new System.Drawing.Point(579, 478);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(22, 20);
+            this.textBox3.Size = new System.Drawing.Size(18, 20);
             this.textBox3.TabIndex = 12;
-=======
-            // gMapControl1
-            // 
-            this.gMapControl1.Bearing = 0F;
-            this.gMapControl1.CanDragMap = true;
-            this.gMapControl1.EmptyTileColor = System.Drawing.Color.Navy;
-            this.gMapControl1.GrayScaleMode = false;
-            this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
-            this.gMapControl1.LevelsKeepInMemmory = 5;
-            this.gMapControl1.Location = new System.Drawing.Point(268, 15);
-            this.gMapControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gMapControl1.MarkersEnabled = true;
-            this.gMapControl1.MaxZoom = 20;
-            this.gMapControl1.MinZoom = 2;
-            this.gMapControl1.MouseWheelZoomEnabled = true;
-            this.gMapControl1.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
-            this.gMapControl1.Name = "gMapControl1";
-            this.gMapControl1.NegativeMode = false;
-            this.gMapControl1.PolygonsEnabled = true;
-            this.gMapControl1.RetryLoadTile = 0;
-            this.gMapControl1.RoutesEnabled = true;
-            this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
-            this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
-            this.gMapControl1.ShowTileGridLines = false;
-            this.gMapControl1.Size = new System.Drawing.Size(783, 448);
-            this.gMapControl1.TabIndex = 0;
-            this.gMapControl1.Zoom = 13D;
-            this.gMapControl1.Load += new System.EventHandler(this.gMapControl1_Load);
->>>>>>> a76a05962709095f735011f8ee1ee11901113f1c
             // 
             // MapForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(924, 543);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label4);
@@ -244,12 +227,7 @@ namespace Gmaps.ui
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCases);
             this.Controls.Add(this.map);
-=======
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.gMapControl1);
->>>>>>> a76a05962709095f735011f8ee1ee11901113f1c
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MapForm";
             this.Text = "MapForm";
             this.ResumeLayout(false);

@@ -18,8 +18,7 @@ namespace Gmaps.ui
 {
     public partial class GridForm : Form
     {
-        private string path = @"C:\Users\Windows 10\Desktop\Gmaps-workshop\Gmaps\data\COVID.xlsx";
-        //private string path = @"C:\Users\alejo\source\repos\Gmaps\Gmaps\data\COVID.xlsx";
+        private string path = "..\\..\\data\\COVID.xlsx";
 
         public object Rows { get; private set; }
 
