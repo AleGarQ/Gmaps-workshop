@@ -59,7 +59,7 @@ namespace Gmaps
             // 
             this.container.Location = new System.Drawing.Point(2, 51);
             this.container.Name = "container";
-            this.container.Size = new System.Drawing.Size(885, 398);
+            this.container.Size = new System.Drawing.Size(885, 439);
             this.container.TabIndex = 10;
             // 
             // button2
