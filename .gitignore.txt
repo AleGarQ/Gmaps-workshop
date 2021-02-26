@@ -1,0 +1,2 @@
+Gmaps/obj/
+Gmaps/bin/
