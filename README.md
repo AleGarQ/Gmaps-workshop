@@ -13,9 +13,9 @@ From a sample of the population of Bogotá and its surroundings, we identify and
 
 #### Documentation:📃📃
 
-PSP0.
+[ENGINEERING METHOD.](https://github.com/AleGarQ/Gmaps-workshop/blob/main/Gmaps/docs/Engineering_Method.pdf "ENGINEERING METHOD.")
 
-ENGINEERING METHOD.
+[PSPO](https://github.com/AleGarQ/Gmaps-workshop/tree/main/Gmaps/docs/PSP0 "PSPO")
 
 [Video Demo](https://youtu.be/YxHjGNMzA6Q "Video Demo")
 
