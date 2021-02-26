@@ -40,7 +40,8 @@ namespace Gmaps.ui
             this.gMapControl1.GrayScaleMode = false;
             this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.gMapControl1.LevelsKeepInMemmory = 5;
-            this.gMapControl1.Location = new System.Drawing.Point(201, 12);
+            this.gMapControl1.Location = new System.Drawing.Point(268, 15);
+            this.gMapControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gMapControl1.MarkersEnabled = true;
             this.gMapControl1.MaxZoom = 20;
             this.gMapControl1.MinZoom = 2;
@@ -54,17 +55,19 @@ namespace Gmaps.ui
             this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.gMapControl1.ShowTileGridLines = false;
-            this.gMapControl1.Size = new System.Drawing.Size(587, 364);
+            this.gMapControl1.Size = new System.Drawing.Size(783, 448);
             this.gMapControl1.TabIndex = 0;
             this.gMapControl1.Zoom = 13D;
+            this.gMapControl1.Load += new System.EventHandler(this.gMapControl1_Load);
             // 
             // MapForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.gMapControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MapForm";
             this.Text = "MapForm";
             this.ResumeLayout(false);

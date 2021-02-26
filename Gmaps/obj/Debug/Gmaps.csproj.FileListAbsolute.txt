@@ -41,3 +41,6 @@ C:\Users\alejo\source\repos\Gmaps\Gmaps\obj\Debug\Gmaps.pdb
 C:\Users\alejo\source\repos\Gmaps\Gmaps\obj\Debug\Gmaps.ui.MapForm.resources
 C:\Users\alejo\source\repos\Gmaps\Gmaps\obj\Debug\Gmaps.ui.GridForm.resources
 C:\Users\alejo\source\repos\Gmaps\Gmaps\obj\Debug\Gmaps.ui.GraphForm.resources
+C:\Users\Windows 10\Desktop\Gmaps-workshop\Gmaps\obj\Debug\Gmaps.ui.GraphForm.resources
+C:\Users\Windows 10\Desktop\Gmaps-workshop\Gmaps\obj\Debug\Gmaps.ui.GridForm.resources
+C:\Users\Windows 10\Desktop\Gmaps-workshop\Gmaps\obj\Debug\Gmaps.ui.MapForm.resources
