@@ -72,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="model\DataManager.cs" />
+    <Compile Include="model\Location.cs" />
     <Compile Include="Principal.cs" />
     <Compile Include="ui\MainForm.cs">
       <SubType>Form</SubType>

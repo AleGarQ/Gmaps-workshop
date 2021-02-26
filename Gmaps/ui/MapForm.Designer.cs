@@ -54,7 +54,7 @@ namespace Gmaps.ui
             this.map.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.map.LevelsKeepInMemmory = 5;
             this.map.Location = new System.Drawing.Point(221, 11);
-            this.map.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.map.Margin = new System.Windows.Forms.Padding(2);
             this.map.MarkersEnabled = true;
             this.map.MaxZoom = 20;
             this.map.MinZoom = 2;
@@ -76,7 +76,7 @@ namespace Gmaps.ui
             // btnCases
             // 
             this.btnCases.Location = new System.Drawing.Point(56, 130);
-            this.btnCases.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCases.Margin = new System.Windows.Forms.Padding(2);
             this.btnCases.Name = "btnCases";
             this.btnCases.Size = new System.Drawing.Size(135, 19);
             this.btnCases.TabIndex = 1;
@@ -97,7 +97,7 @@ namespace Gmaps.ui
             // btnRecovered
             // 
             this.btnRecovered.Location = new System.Drawing.Point(56, 162);
-            this.btnRecovered.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRecovered.Margin = new System.Windows.Forms.Padding(2);
             this.btnRecovered.Name = "btnRecovered";
             this.btnRecovered.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnRecovered.Size = new System.Drawing.Size(135, 19);
@@ -109,17 +109,18 @@ namespace Gmaps.ui
             // btnDeceased
             // 
             this.btnDeceased.Location = new System.Drawing.Point(56, 197);
-            this.btnDeceased.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDeceased.Margin = new System.Windows.Forms.Padding(2);
             this.btnDeceased.Name = "btnDeceased";
             this.btnDeceased.Size = new System.Drawing.Size(135, 19);
             this.btnDeceased.TabIndex = 4;
             this.btnDeceased.Text = "Cantidad fallecidos";
             this.btnDeceased.UseVisualStyleBackColor = true;
+            this.btnDeceased.Click += new System.EventHandler(this.btnDeceased_Click);
             // 
             // btnShowAll
             // 
             this.btnShowAll.Location = new System.Drawing.Point(56, 39);
-            this.btnShowAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnShowAll.Margin = new System.Windows.Forms.Padding(2);
             this.btnShowAll.Name = "btnShowAll";
             this.btnShowAll.Size = new System.Drawing.Size(135, 19);
             this.btnShowAll.TabIndex = 5;
@@ -130,7 +131,7 @@ namespace Gmaps.ui
             // btnClear
             // 
             this.btnClear.Location = new System.Drawing.Point(56, 287);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(135, 19);
             this.btnClear.TabIndex = 6;
@@ -153,7 +154,7 @@ namespace Gmaps.ui
             this.textBox1.BackColor = System.Drawing.Color.Red;
             this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(430, 478);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(18, 20);
             this.textBox1.TabIndex = 8;
@@ -183,7 +184,7 @@ namespace Gmaps.ui
             this.textBox2.BackColor = System.Drawing.Color.Yellow;
             this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(507, 478);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(18, 20);
             this.textBox2.TabIndex = 10;
@@ -203,7 +204,7 @@ namespace Gmaps.ui
             this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(579, 478);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(18, 20);
             this.textBox3.TabIndex = 12;
