@@ -85,6 +85,11 @@ namespace Gmaps.ui
             {
                 categoriaCombo.Enabled = false;
             }
+            if (cade.Enabled == true)
+            {
+                cade.Enabled = false;
+                filter2.Visible = false;
+            }
             string[] stg = { numerico1.Text.ToString(), numerico2.Text.ToString() };
             return stg;
         }
@@ -101,6 +106,11 @@ namespace Gmaps.ui
                 numerico2.Text = "";
                 filter.Visible = false;
             }
+            if(cade.Enabled == true)
+            {
+                cade.Enabled = false;
+                filter2.Visible = false;
+            }
             if (comboBox1.SelectedItem.ToString() == "CIUDAD")
             {
                 categoriaCombo.Items.Add("Bogotá");
@@ -113,7 +123,26 @@ namespace Gmaps.ui
                 categoriaCombo.Items.Add("Femenino");
                 categoriaCombo.Items.Add("Masculino");
             }
+        }
 
+        public string cadena()
+        {
+            filter2.Visible = true;
+            cade.Enabled = true;
+
+            if (numerico1.Enabled == true && numerico2.Enabled == true)
+            {
+                numerico1.Enabled = false;
+                numerico2.Enabled = false;
+                numerico1.Text = "";
+                numerico2.Text = "";
+                filter.Visible = false;
+            }
+            if (categoriaCombo.Enabled == true)
+            {
+                categoriaCombo.Enabled = false;
+            }
+            return cade.Text.ToString();
         }
 
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -133,6 +162,9 @@ namespace Gmaps.ui
             if (comboBox1.SelectedIndex == 3) //categorico
             {
                 categorico();
+            }if(comboBox1.SelectedIndex == 4)
+            {
+                cadena();
             }
         }
 
@@ -217,10 +249,10 @@ namespace Gmaps.ui
 
         private void filter_Click(object sender, EventArgs e)
         {
-           
             string[] valores = Numerico();
             int valorOne = int.Parse(valores[0]);
             int valorTwo = int.Parse(valores[1]);
+
             if(comboBox1.SelectedItem.ToString() == "CASO")
             {
                 for (int row = 1; row <= 6890; row++)
@@ -246,6 +278,21 @@ namespace Gmaps.ui
 
             numerico1.Text = "";
             numerico2.Text = "";
+        }
+
+        private void filter2_Click(object sender, EventArgs e)
+        {
+            string st = cadena();
+
+            for (int row = 1; row <= 6890; row++)
+            {
+                string r = (string)dataGridView1.Rows[row].Cells[4].Value;
+                if (!(r.Contains(st)))
+                {
+                    dataGridView1.Rows[row].Visible = false;
+                }
+            }
+            cade.Text = "";
         }
     }
 }

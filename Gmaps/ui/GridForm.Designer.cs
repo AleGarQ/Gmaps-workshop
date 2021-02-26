@@ -38,6 +38,8 @@ namespace Gmaps.ui
             this.numerico2 = new System.Windows.Forms.TextBox();
             this.delete = new System.Windows.Forms.Button();
             this.filter = new System.Windows.Forms.Button();
+            this.cade = new System.Windows.Forms.TextBox();
+            this.filter2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,7 +51,8 @@ namespace Gmaps.ui
             "CASO",
             "CIUDAD",
             "EDAD",
-            "SEXO"});
+            "SEXO",
+            "LOCALIDAD"});
             this.comboBox1.Location = new System.Drawing.Point(888, 87);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
@@ -115,12 +118,12 @@ namespace Gmaps.ui
             this.numerico2.Location = new System.Drawing.Point(1003, 206);
             this.numerico2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numerico2.Name = "numerico2";
-            this.numerico2.Size = new System.Drawing.Size(100, 22);
+            this.numerico2.Size = new System.Drawing.Size(104, 22);
             this.numerico2.TabIndex = 13;
             // 
             // delete
             // 
-            this.delete.Location = new System.Drawing.Point(916, 390);
+            this.delete.Location = new System.Drawing.Point(916, 374);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(187, 35);
             this.delete.TabIndex = 16;
@@ -130,7 +133,7 @@ namespace Gmaps.ui
             // 
             // filter
             // 
-            this.filter.Location = new System.Drawing.Point(1109, 205);
+            this.filter.Location = new System.Drawing.Point(1113, 205);
             this.filter.Name = "filter";
             this.filter.Size = new System.Drawing.Size(94, 23);
             this.filter.TabIndex = 17;
@@ -139,11 +142,32 @@ namespace Gmaps.ui
             this.filter.Visible = false;
             this.filter.Click += new System.EventHandler(this.filter_Click);
             // 
+            // cade
+            // 
+            this.cade.Enabled = false;
+            this.cade.Location = new System.Drawing.Point(888, 295);
+            this.cade.Name = "cade";
+            this.cade.Size = new System.Drawing.Size(219, 22);
+            this.cade.TabIndex = 18;
+            // 
+            // filter2
+            // 
+            this.filter2.Location = new System.Drawing.Point(1113, 294);
+            this.filter2.Name = "filter2";
+            this.filter2.Size = new System.Drawing.Size(94, 23);
+            this.filter2.TabIndex = 19;
+            this.filter2.Text = "FILTRAR!";
+            this.filter2.UseVisualStyleBackColor = true;
+            this.filter2.Visible = false;
+            this.filter2.Click += new System.EventHandler(this.filter2_Click);
+            // 
             // GridForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1211, 539);
+            this.Controls.Add(this.filter2);
+            this.Controls.Add(this.cade);
             this.Controls.Add(this.filter);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.comboBox1);
@@ -174,5 +198,7 @@ namespace Gmaps.ui
         private System.Windows.Forms.TextBox numerico2;
         private System.Windows.Forms.Button delete;
         private System.Windows.Forms.Button filter;
+        private System.Windows.Forms.TextBox cade;
+        private System.Windows.Forms.Button filter2;
     }
 }
