@@ -20,8 +20,8 @@ ENGINEERING METHOD.
 VIDEO.
 
 
-[Alejandro García ](http://https://github.com/AleGarQ "Alejandro García ")
+[Jhon Stiven Arboleda](https://github.com/StivenArboleda "Jhon Stiven Arboleda")
 
-[Isabella Ortiz](http://https://github.com/isabellaortiz5 "Isabella Ortiz")
+[Isabella Ortiz](https://github.com/isabellaortiz5 "Isabella Ortiz")
 
-[Jhon Stiven Arboleda](http://https://github.com/StivenArboleda "Jhon Stiven Arboleda")
+[Alejandro García](https://github.com/AleGarQ "Alejandro García")
