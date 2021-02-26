@@ -57,6 +57,7 @@ namespace Gmaps
         private void btnGraph_Click(object sender, EventArgs e)
         {
             openChildForm(new GraphForm());
+
         }
     }
 }
