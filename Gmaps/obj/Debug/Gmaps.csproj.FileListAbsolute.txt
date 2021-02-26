@@ -41,6 +41,32 @@ C:\Users\alejo\source\repos\Gmaps\Gmaps\obj\Debug\Gmaps.pdb
 C:\Users\alejo\source\repos\Gmaps\Gmaps\obj\Debug\Gmaps.ui.MapForm.resources
 C:\Users\alejo\source\repos\Gmaps\Gmaps\obj\Debug\Gmaps.ui.GridForm.resources
 C:\Users\alejo\source\repos\Gmaps\Gmaps\obj\Debug\Gmaps.ui.GraphForm.resources
+<<<<<<< HEAD
 C:\Users\Windows 10\Desktop\Gmaps-workshop\Gmaps\obj\Debug\Gmaps.ui.GraphForm.resources
 C:\Users\Windows 10\Desktop\Gmaps-workshop\Gmaps\obj\Debug\Gmaps.ui.GridForm.resources
 C:\Users\Windows 10\Desktop\Gmaps-workshop\Gmaps\obj\Debug\Gmaps.ui.MapForm.resources
+=======
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\bin\Debug\Gmaps.exe.config
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\bin\Debug\Gmaps.exe
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\bin\Debug\Gmaps.pdb
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\bin\Debug\GMap.NET.Core.dll
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\bin\Debug\SpreadsheetLight.dll
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\bin\Debug\System.Drawing.Common.dll
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\bin\Debug\System.IO.Packaging.dll
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\bin\Debug\SpreadsheetLight.xml
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\bin\Debug\System.IO.Packaging.xml
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\obj\Debug\Gmaps.csprojAssemblyReference.cache
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\obj\Debug\Gmaps.Form1.resources
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\obj\Debug\Gmaps.Properties.Resources.resources
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\obj\Debug\Gmaps.ui.GraphForm.resources
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\obj\Debug\Gmaps.ui.GridForm.resources
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\obj\Debug\Gmaps.ui.MapForm.resources
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\obj\Debug\Gmaps.csproj.GenerateResource.cache
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\obj\Debug\Gmaps.csproj.CoreCompileInputs.cache
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\obj\Debug\Gmaps.csproj.CopyComplete
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\obj\Debug\Gmaps.exe
+C:\Users\prestamo\source\repos\Gmaps-workshop2\Gmaps\obj\Debug\Gmaps.pdb
+>>>>>>> 5ec360b3de41fb7ee07193c447d1ba4f4bd496ce
