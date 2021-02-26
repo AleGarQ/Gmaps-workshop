@@ -11,7 +11,7 @@ From a sample of the population of Bogotá and its surroundings, we identify and
 #### **VIEW 3**
 ![Vista 3](https://github.com/AleGarQ/Gmaps-workshop/blob/main/Gmaps/images/Vista3.jpeg "Vista 3")
 
-#### **Documentation:**📃📃
+#### Documentation:📃📃
 
 PSP0.
 
