@@ -20,6 +20,9 @@ From a sample of the population of Bogotá and its surroundings, we identify and
 [Video Demo](https://youtu.be/YxHjGNMzA6Q "Video Demo")
 
 
+
+### MEMBERS:
+
 [Jhon Stiven Arboleda](https://github.com/StivenArboleda "Jhon Stiven Arboleda")
 
 [Isabella Ortiz](https://github.com/isabellaortiz5 "Isabella Ortiz")
