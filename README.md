@@ -6,7 +6,7 @@ From a sample of the population of Bogotá and its surroundings, we identify and
 
 #### **VIEW 1**
 ![Vista 1](https://github.com/AleGarQ/Gmaps-workshop/blob/main/Gmaps/images/Vista1.jpeg)
-####**VIEW 2**
+#### **VIEW 2**
 ![Vista 2](https://github.com/AleGarQ/Gmaps-workshop/blob/main/Gmaps/images/Vista2.jpeg "Vista 2")
 #### **VIEW 3**
 ![Vista 3](https://github.com/AleGarQ/Gmaps-workshop/blob/main/Gmaps/images/Vista3.jpeg "Vista 3")
@@ -14,7 +14,9 @@ From a sample of the population of Bogotá and its surroundings, we identify and
 #### **Documentation:**📃📃
 
 PSP0.
+
 ENGINEERING METHOD.
+
 VIDEO.
 
 
