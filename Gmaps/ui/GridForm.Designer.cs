@@ -33,11 +33,11 @@ namespace Gmaps.ui
             this.categoriaCombo = new System.Windows.Forms.ComboBox();
             this.numerico1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.texto = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.numerico2 = new System.Windows.Forms.TextBox();
             this.delete = new System.Windows.Forms.Button();
+            this.filter = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,14 +49,8 @@ namespace Gmaps.ui
             "CASO",
             "CIUDAD",
             "EDAD",
-            "ESTADO",
-            "FECHA DE DIAGNOSTICO",
-            "FUENTE",
-            "INICIO SINTOMAS",
-            "LOCALIDAD",
-            "SEXO",
-            "UBICACION"});
-            this.comboBox1.Location = new System.Drawing.Point(884, 66);
+            "SEXO"});
+            this.comboBox1.Location = new System.Drawing.Point(888, 87);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(219, 24);
@@ -67,17 +61,17 @@ namespace Gmaps.ui
             // 
             this.categoriaCombo.Enabled = false;
             this.categoriaCombo.FormattingEnabled = true;
-            this.categoriaCombo.Location = new System.Drawing.Point(888, 124);
+            this.categoriaCombo.Location = new System.Drawing.Point(888, 151);
             this.categoriaCombo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.categoriaCombo.Name = "categoriaCombo";
-            this.categoriaCombo.Size = new System.Drawing.Size(215, 24);
+            this.categoriaCombo.Size = new System.Drawing.Size(219, 24);
             this.categoriaCombo.TabIndex = 14;
             this.categoriaCombo.SelectedIndexChanged += new System.EventHandler(this.categoriaCombo_SelectedIndexChanged);
             // 
             // numerico1
             // 
             this.numerico1.Enabled = false;
-            this.numerico1.Location = new System.Drawing.Point(888, 161);
+            this.numerico1.Location = new System.Drawing.Point(888, 206);
             this.numerico1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numerico1.Name = "numerico1";
             this.numerico1.Size = new System.Drawing.Size(108, 22);
@@ -94,15 +88,6 @@ namespace Gmaps.ui
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // texto
-            // 
-            this.texto.Enabled = false;
-            this.texto.Location = new System.Drawing.Point(888, 208);
-            this.texto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.texto.Name = "texto";
-            this.texto.Size = new System.Drawing.Size(215, 22);
-            this.texto.TabIndex = 15;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -117,7 +102,7 @@ namespace Gmaps.ui
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(927, 18);
+            this.label1.Location = new System.Drawing.Point(885, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 17);
             this.label1.TabIndex = 10;
@@ -127,7 +112,7 @@ namespace Gmaps.ui
             // numerico2
             // 
             this.numerico2.Enabled = false;
-            this.numerico2.Location = new System.Drawing.Point(1003, 161);
+            this.numerico2.Location = new System.Drawing.Point(1003, 206);
             this.numerico2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numerico2.Name = "numerico2";
             this.numerico2.Size = new System.Drawing.Size(100, 22);
@@ -135,7 +120,7 @@ namespace Gmaps.ui
             // 
             // delete
             // 
-            this.delete.Location = new System.Drawing.Point(888, 390);
+            this.delete.Location = new System.Drawing.Point(916, 390);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(187, 35);
             this.delete.TabIndex = 16;
@@ -143,17 +128,28 @@ namespace Gmaps.ui
             this.delete.UseVisualStyleBackColor = true;
             this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
+            // filter
+            // 
+            this.filter.Location = new System.Drawing.Point(1109, 205);
+            this.filter.Name = "filter";
+            this.filter.Size = new System.Drawing.Size(94, 23);
+            this.filter.TabIndex = 17;
+            this.filter.Text = "FILTRAR!";
+            this.filter.UseVisualStyleBackColor = true;
+            this.filter.Visible = false;
+            this.filter.Click += new System.EventHandler(this.filter_Click);
+            // 
             // GridForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1133, 539);
+            this.ClientSize = new System.Drawing.Size(1211, 539);
+            this.Controls.Add(this.filter);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.categoriaCombo);
             this.Controls.Add(this.numerico1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.texto);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.numerico2);
@@ -173,10 +169,10 @@ namespace Gmaps.ui
         private System.Windows.Forms.ComboBox categoriaCombo;
         private System.Windows.Forms.TextBox numerico1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox texto;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox numerico2;
         private System.Windows.Forms.Button delete;
+        private System.Windows.Forms.Button filter;
     }
 }

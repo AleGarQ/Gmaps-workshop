@@ -76,93 +76,44 @@ namespace Gmaps.ui
                 return tmp;
             }
         */
-        public void Numerico()
+        public string[] Numerico()
         {
             numerico1.Enabled = true;
             numerico2.Enabled = true;
+            filter.Visible = true;
             if (categoriaCombo.Enabled == true)
             {
                 categoriaCombo.Enabled = false;
             }
-            if (texto.Enabled == true)
-            {
-                texto.Enabled = false;
-            }
-
-            //string[] lines = File.ReadAllLines(path);
-            ArrayList ar = new ArrayList();
-
-            for (int row = 1; row <= 6890; row++)
-            {
-                if (numerico1.Text != string.Empty && numerico2.Text != string.Empty)
-                {
-                    int num1 = int.Parse(numerico1.Text);
-                    int num2 = int.Parse(numerico2.Text);
-                    int valor = (int)dataGridView1.Rows[row].Cells[3].Value;
-
-                    if (valor > num1 && valor < num2)
-                    {
-                        ar.Add(valor);
-
-                    }
-                    if (!ar.Contains(valor))
-                    {
-                        dataGridView1.Rows[row].Visible = false;
-                    }
-                }
-
-            }
+            string[] stg = { numerico1.Text.ToString(), numerico2.Text.ToString() };
+            return stg;
         }
 
         public void categorico()
         {
             categoriaCombo.Enabled = true;
+            categoriaCombo.Items.Clear();
             if (numerico1.Enabled == true && numerico2.Enabled == true)
             {
                 numerico1.Enabled = false;
                 numerico2.Enabled = false;
                 numerico1.Text = "";
                 numerico2.Text = "";
-            }
-            if (texto.Enabled == true)
-            {
-                texto.Enabled = false;
+                filter.Visible = false;
             }
             if (comboBox1.SelectedItem.ToString() == "CIUDAD")
             {
                 categoriaCombo.Items.Add("Bogotá");
                 categoriaCombo.Items.Add("Fuera de Bogotá");
                 categoriaCombo.Items.Add("Sin dato");
-
-                
             }
 
-            /*if (comboBox1.SelectedItem.ToString() == "SEXO")
+            if (comboBox1.SelectedItem.ToString() == "SEXO")
             {
                 categoriaCombo.Items.Add("Femenino");
                 categoriaCombo.Items.Add("Masculino");
-
-                if (categoriaCombo.Text == "Bogotá")
-                {
-
-                }
-            }*/
-
-        }
-
-        public void cadena()
-        {
-            texto.Enabled = true;
-            if (numerico1.Enabled == true && numerico2.Enabled == true)
-            {
-                numerico1.Enabled = false;
-                numerico2.Enabled = false;
             }
-            if (categoriaCombo.Enabled == true)
-            {
-                categoriaCombo.Enabled = false;
-                categoriaCombo.Text = "";
-            }
+
         }
 
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -183,62 +134,73 @@ namespace Gmaps.ui
             {
                 categorico();
             }
-            if (comboBox1.SelectedIndex == 5) //cadena
-            {
-                cadena();
-            }
-            if (comboBox1.SelectedIndex == 7) //cadena
-            {
-                cadena();
-            }
-            if (comboBox1.SelectedIndex == 8) //categorico
-            {
-                categorico();
-            }
-            if (comboBox1.SelectedIndex == 9) //cadena
-            {
-                cadena();
-            }
         }
 
         private void delete_Click(object sender, EventArgs e)
         {
             loadData();
+            categoriaCombo.Items.Clear();
         }
 
         private void categoriaCombo_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (comboBox1.SelectedItem.ToString() == "SEXO")
+            {
+
+                if (categoriaCombo.SelectedItem.ToString() == "Femenino")
+                {
+                    for (int row = 1; row <= 6890; row++)
+                    {
+                        string r = (string)dataGridView1.Rows[row].Cells[6].Value;
+                        if (r != "F")
+                        {
+                            dataGridView1.Rows[row].Visible = false;
+                        }
+                    }
+                }
+                if (categoriaCombo.SelectedItem.ToString() == "Masculino")
+                {
+                    for (int row = 1; row <= 6890; row++)
+                    {
+                        string r = (string)dataGridView1.Rows[row].Cells[6].Value;
+                        if (r != "M")
+                        {
+                            dataGridView1.Rows[row].Visible = false;
+                        }
+                    }
+                }
+            }
             if (comboBox1.SelectedItem.ToString() == "CIUDAD")
             {
-                if (comboBox1.SelectedItem.ToString().Equals(""))
+                if (categoriaCombo.SelectedItem.ToString().Equals(""))
                 {
                     categoriaCombo.Items.Add("Bogotá");
                     categoriaCombo.Items.Add("Fuera de Bogotá");
                     categoriaCombo.Items.Add("Sin dato");
                 }
 
-                    if (categoriaCombo.SelectedItem.ToString() == "Bogotá")
+                if (categoriaCombo.SelectedItem.ToString() == "Bogotá")
+                {
+                    for (int row = 1; row <= 6890; row++)
                     {
-                        for (int row = 1; row <= 6890; row++)
+                        string r = (string)dataGridView1.Rows[row].Cells[3].Value;
+                        if (r != "Bogotá")
                         {
-                            string r = (string)dataGridView1.Rows[row].Cells[3].Value;
-                            if (r != "Bogotá")
-                            {
-                                dataGridView1.Rows[row].Visible = false;
-                            }
+                            dataGridView1.Rows[row].Visible = false;
                         }
                     }
-                    if (categoriaCombo.SelectedItem.ToString() == "Sin dato")
+                }
+                if (categoriaCombo.SelectedItem.ToString() == "Sin dato")
+                {
+                    for (int row = 1; row <= 6890; row++)
                     {
-                        for (int row = 1; row <= 6890; row++)
+                        string r = (string)dataGridView1.Rows[row].Cells[3].Value;
+                        if (r != "Sin dato")
                         {
-                            string r = (string)dataGridView1.Rows[row].Cells[3].Value;
-                            if (r != "Sin dato")
-                            {
-                                dataGridView1.Rows[row].Visible = false;
-                            }
+                            dataGridView1.Rows[row].Visible = false;
                         }
                     }
+                }
                 if (categoriaCombo.SelectedItem.ToString() == "Fuera de Bogotá")
                 {
                     for (int row = 1; row <= 6890; row++)
@@ -250,8 +212,40 @@ namespace Gmaps.ui
                         }
                     }
                 }
-
             }
+        }
+
+        private void filter_Click(object sender, EventArgs e)
+        {
+           
+            string[] valores = Numerico();
+            int valorOne = int.Parse(valores[0]);
+            int valorTwo = int.Parse(valores[1]);
+            if(comboBox1.SelectedItem.ToString() == "CASO")
+            {
+                for (int row = 1; row <= 6890; row++)
+                {
+                    int r = (int)dataGridView1.Rows[row].Cells[0].Value;
+                    if (!(r > valorOne - 1) || !(r < valorTwo + 1))
+                    {
+                        dataGridView1.Rows[row].Visible = false;
+                    }
+                }
+            }
+            if (comboBox1.SelectedItem.ToString() == "EDAD")
+            {
+                for (int row = 1; row <= 6890; row++)
+                {
+                    int r = (int)dataGridView1.Rows[row].Cells[5].Value;
+                    if (!(r > valorOne - 1) || !(r < valorTwo + 1))
+                    {
+                        dataGridView1.Rows[row].Visible = false;
+                    }
+                }
+            }
+
+            numerico1.Text = "";
+            numerico2.Text = "";
         }
     }
 }
