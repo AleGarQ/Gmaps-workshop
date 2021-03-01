@@ -1,2 +1,2 @@
-Gmaps/obj/
-Gmaps/bin/
+Gmaps/Gmaps/obj
+Gmaps/Gmaps/bin

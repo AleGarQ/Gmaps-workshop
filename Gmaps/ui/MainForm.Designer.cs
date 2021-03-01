@@ -37,9 +37,10 @@ namespace Gmaps
             // 
             // btnMap
             // 
-            this.btnMap.Location = new System.Drawing.Point(91, 12);
+            this.btnMap.Location = new System.Drawing.Point(121, 15);
+            this.btnMap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMap.Name = "btnMap";
-            this.btnMap.Size = new System.Drawing.Size(76, 23);
+            this.btnMap.Size = new System.Drawing.Size(101, 28);
             this.btnMap.TabIndex = 8;
             this.btnMap.Text = "Mapa";
             this.btnMap.UseVisualStyleBackColor = true;
@@ -47,9 +48,10 @@ namespace Gmaps
             // 
             // btnGraph
             // 
-            this.btnGraph.Location = new System.Drawing.Point(164, 12);
+            this.btnGraph.Location = new System.Drawing.Point(219, 15);
+            this.btnGraph.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGraph.Name = "btnGraph";
-            this.btnGraph.Size = new System.Drawing.Size(75, 23);
+            this.btnGraph.Size = new System.Drawing.Size(100, 28);
             this.btnGraph.TabIndex = 9;
             this.btnGraph.Text = "Gráfico";
             this.btnGraph.UseVisualStyleBackColor = true;
@@ -57,16 +59,18 @@ namespace Gmaps
             // 
             // container
             // 
-            this.container.Location = new System.Drawing.Point(2, 51);
+            this.container.Location = new System.Drawing.Point(3, 63);
+            this.container.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.container.Name = "container";
-            this.container.Size = new System.Drawing.Size(970, 533);
+            this.container.Size = new System.Drawing.Size(1293, 656);
             this.container.TabIndex = 10;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(20, 12);
+            this.button2.Location = new System.Drawing.Point(27, 15);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 11;
             this.button2.Text = "Tabla";
             this.button2.UseVisualStyleBackColor = true;
@@ -74,15 +78,16 @@ namespace Gmaps
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(972, 584);
+            this.ClientSize = new System.Drawing.Size(1296, 719);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.container);
             this.Controls.Add(this.btnGraph);
             this.Controls.Add(this.btnMap);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Gmaps";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 

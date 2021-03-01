@@ -13,15 +13,18 @@ From a sample of the population of Bogotá and its surroundings, we identify and
 
 #### Documentation:📃📃
 
-PSP0.
+[ENGINEERING METHOD.](https://github.com/AleGarQ/Gmaps-workshop/blob/main/Gmaps/docs/Engineering_Method.pdf "ENGINEERING METHOD.")
 
-ENGINEERING METHOD.
+[PSPO](https://github.com/AleGarQ/Gmaps-workshop/tree/main/Gmaps/docs/PSP0 "PSPO")
 
-VIDEO.
+[Video Demo](https://youtu.be/YxHjGNMzA6Q "Video Demo")
 
 
-[Alejandro García ](http://https://github.com/AleGarQ "Alejandro García ")
 
-[Isabella Ortiz](http://https://github.com/isabellaortiz5 "Isabella Ortiz")
+### MEMBERS:
 
-[Jhon Stiven Arboleda](http://https://github.com/StivenArboleda "Jhon Stiven Arboleda")
+[Jhon Stiven Arboleda](https://github.com/StivenArboleda "Jhon Stiven Arboleda")
+
+[Isabella Ortiz](https://github.com/isabellaortiz5 "Isabella Ortiz")
+
+[Alejandro García](https://github.com/AleGarQ "Alejandro García")
